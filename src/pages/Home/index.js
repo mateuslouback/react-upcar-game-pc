@@ -21,7 +21,17 @@ export default function Home() {
   const audioSelectPalyerMP3File = new Audio(selectPalyerMP3File);
   const audioSelectmusicMP3File = new Audio(musicMP3File);
 
-  audioSelectmusicMP3File.play();
+  const promiseMusic = audioSelectmusicMP3File.play();
+
+  if (promiseMusic !== undefined) {
+    promiseMusic
+      .then(_ => {
+        console.log('Autoplay started!');
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }
 
   // Function start player
   const startPlayer = () => {
