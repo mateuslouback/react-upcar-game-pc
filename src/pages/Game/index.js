@@ -25,9 +25,17 @@ export default function Game() {
 
   // Function to perform page load only
   useEffect(() => {
-    const audioSelectmusicMP3File = new Audio(musicMP3File);
+    const promiseMusic = audioSelectmusicMP3File.play();
 
-    audioSelectmusicMP3File.play();
+    if (promiseMusic !== undefined) {
+      promiseMusic
+        .then(_ => {
+          console.log('Autoplay started!');
+        })
+        .catch(error => {
+          console.log(error);
+        });
+    }
 
     let i = 4;
     (function timer() {
