@@ -22,10 +22,10 @@ export default function Game() {
   const [directionX, setDirectionX] = useState('222');
   const [imageCarRace, setImagecar] = useState(imageCar);
   const [playPause, setPlayPause] = useState('PAUSE = P');
+  const audioSelectmusicMP3File = new Audio(musicMP3File);
 
   // Function to perform page load only
   useEffect(() => {
-    const audioSelectmusicMP3File = new Audio(musicMP3File);
     const promiseMusic = audioSelectmusicMP3File.play();
 
     if (promiseMusic !== undefined) {
@@ -79,22 +79,22 @@ export default function Game() {
         setImagecar(imageCar);
         setPlayPause('RETRY = R');
         break;
-        // P = Pause
+      // P = Pause
       case 82:
         setPlayPause('PAUSE = P');
         setCartrack(sceneryBg);
         break;
-        // Direction right
+      // Direction right
       case 39:
       case 68:
         setDirectionX('415');
         break;
-        // Direction middle
+      // Direction middle
       case 37:
       case 65:
         setDirectionX('40');
         break;
-        // Direction left
+      // Direction left
       case 83:
       case 38:
       case 40:
