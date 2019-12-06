@@ -2,6 +2,8 @@
 
 Este projeto é um game simples de carro para rodar em navegadores de computadores.
 
+![](game.gif)
+
 
 ## Começando
 
