@@ -34,7 +34,7 @@ $ yarn start
 
 ## Licença
 
-Distribuído sob a licença Software Proprietário. Veja `LICENSE` para mais informações.
+Distribuído sob a licença Software Livre. Veja `LICENSE` para mais informações.
 
 
 ## Contato
