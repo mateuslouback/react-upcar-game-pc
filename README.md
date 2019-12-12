@@ -2,7 +2,7 @@
 
 Este projeto é um game simples de carro para rodar em navegadores de computadores.
 
-![](game.gif)
+![](https://user-images.githubusercontent.com/28745371/70755052-9a653a00-1d17-11ea-8b68-7d87991afa37.gif)
 
 
 ## Começando
